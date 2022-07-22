@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Game(Naveen Design)
+        </title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src = "./Javascript/game.js"></script>
+
+ 
+    </head>
+    <body>
+   
+    <p style='text-align: center;'>
+        <button class="button button1" onclick="return StartGame();">
+           <span style="color:blue; font-size:150%;">Start</span>
+          </button>
+	<button class="button button3" onclick="return StopGame();"> 
+        <span style="color:blue; font-size:150%;">Stop</span>
+        </button>
+    </p>
+<div class="gameshapes" id="gameplay">
+		<h1 style="color:lightgreen;">Select 4 spots and press start button to see the shapes</h1>
+	<div id="game_error"></div>
+		<canvas id="canvas" onclick="return showCoords(canvas, event);" width="600px" height="400px" style="border:0px solid #000000;">
+		</canvas>
+   		</div>
+		</div>
+
+  
+    </body>

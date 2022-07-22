@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Provide Feedback</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src = "./Javascript/my_Script.js"></script>
+</head>
+
+<body>
+    <form action="/send" name="myForm" method="post">    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="first-name">First Name:</label>    
+          </div>    
+          <div class="col-75">    
+            <input type="text" id="first-name" name="firstname" placeholder="Required" required onfocusout="validate1()" minlength="1">    
+          </div>    
+        </div>    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="last-name">Last Name:</label>    
+          </div>    
+          <div class="col-75">    
+            <input type="text" id="last-name" name="lastname" placeholder="Required" required onfocusout="validate2()" minlength="1">     
+          </div>    
+        </div>   
+        <div class="row">    
+            <div class="col-25">    
+              <label for="address">Address:</label>    
+            </div>    
+            <div class="col-75">    
+              <input type="text" id="address" name="address" onfocusout="validate3()" placeholder="Required" required minlength="1">    
+            </div>    
+          </div>   
+        <div class="row">    
+            <div class="col-25">    
+              <label for="phone">Phone:</label>    
+            </div>    
+            <div class="col-75">    
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX"  required>    
+            </div>    
+          </div>    
+         <div class="row">    
+            <div class="col-25">    
+              <label for="email">Email:</label>    
+            </div>    
+            <div class="col-75">    
+              <input type="email" id="email" name="email" placeholder="XYZ@abc.com" onfocusout="validateEmail()" required>    
+            </div>    
+          </div>    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="comments">Comment:</label>    
+          </div>    
+          <div class="col-75">    
+            <textarea id="comments" name="comments" placeholder="Required" required minlength="1" onfocusout="validate4()" style="height:200px"></textarea>    
+          </div>    
+        </div>    
+        <div class="row">    
+          <input type="submit" value="Submit" onclick="alert('Thank you, your response is successfully saved')">    
+        </div>    
+      </form> 
+
+</body>
+</html>
